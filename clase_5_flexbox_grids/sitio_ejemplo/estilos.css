@@ -1,0 +1,155 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+.menuSuperior{
+    list-style: none;
+    text-align: center;
+}
+.menuSuperior li{
+    display: inline-block;
+}
+.menuSuperior a{
+    color: rgb(139, 102, 173);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-left: 3rem;
+}
+
+
+.menu{
+    list-style: none;
+    font-size: 0;
+}
+.menu li{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    font-size: 15px;
+}
+.submenu {
+    position: absolute;
+    display: none;
+}
+.submenu li{
+    display: block;
+}
+.menu li:hover ul {
+    display:block;
+}
+.contenedor{
+    display: flex;
+}
+.ilustraciones{
+    background-color: rgb(97, 74, 230);
+    padding: 1rem;
+    width: 70%;
+}
+/* caja padre */
+.contenido_ilustraciones{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.contenidoImagen{
+    width: 100%;
+}
+.contenidoImagen img{
+    width: 60%;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.774);
+}
+.contenidoSugerencias{
+    background-color: rgb(111, 111, 170);
+    padding: 2rem;
+    width: 30%;
+line-height: 2rem;
+
+}
+.colores img{
+    width: 80%;
+}
+.container{
+    background-color: rgb(214, 203, 203);
+}
+.footer{
+    color: black;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+.bloque_footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menuFooter{
+list-style: none;
+}
+.menuFooter a{
+    color: rgb(139, 102, 173);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+.link a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(131, 84, 175);
+}
+.credito_final{
+    text-align: center;
+}
+.caja{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px 20px;
+    border-radius: 10px;
+    border: double 10px black;
+}
+.texto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+
+}
+.uno{background-color: blue;
+}
+.dos{background-color: yellow;
+}
+.tres{background-color: red;
+}
+.cuatro{background-color: blueviolet;
+}
+.cinco{background-color: brown;
+}
+.seis{background-color: aqua;
+}
+.siete{background-color:coral;
+}
+.ocho{background-color:darkmagenta;
+}
+.linksContenido{
+    background-color: rgb(254, 255, 255);
+}
+.linksContenido li{
+    display: inline-block;
+    padding: 20px 20px 30px 30px;
+}
+.links{
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
