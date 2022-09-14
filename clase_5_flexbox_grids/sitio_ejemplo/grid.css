@@ -1,0 +1,42 @@
+/* si cambio el nombre,tambien debo hacerlo en grid-area */
+.grilla{
+    display: grid;
+    grid-template-rows:1fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap:20px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    "nav header publicidad"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer publicidad"
+
+}
+.border{
+    border: 1px solid black;
+}
+header{
+    background-color: rgb(175, 112, 233);
+    grid-area: header;
+}
+footer{
+    background-color: rgb(140, 209, 209);
+    grid-area: footer;
+}
+section#productos{
+background-color: rgb(138, 211, 104);
+    
+}
+section#servicios{
+    background-color: rgb(189, 207, 86);
+}
+nav{
+    background-color: rgb(102, 164, 223);
+    grid-area: nav;
+}
+aside{
+    background-color: rgb(221, 142, 77);
+    grid-area: publicidad;
+}
