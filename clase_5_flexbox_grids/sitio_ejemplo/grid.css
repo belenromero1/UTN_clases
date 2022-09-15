@@ -8,7 +8,7 @@
     height: 100vh;
     width: 100vw;
     grid-template-areas: 
-    "nav header publicidad"
+    "nav header header"
     "nav productos publicidad"
     "nav servicios publicidad"
     "footer footer publicidad"
@@ -39,4 +39,73 @@ nav{
 aside{
     background-color: rgb(221, 142, 77);
     grid-area: publicidad;
+}
+/* practica */
+.body{
+background-color: rgb(255, 255, 255);
+display: grid;
+grid-column-gap:10px;
+grid-row-gap: 10px;
+grid-template-rows: 100px 70px 800px 400px 100px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+"header header header header"
+"nav nav nav nav"
+"main main main aside"
+"seccion-1 seccion-2 seccion-3 aside"
+"footer footer footer footer"
+}
+.header{
+background-color: blue;
+grid-area: header;
+display: flex;
+flex-direction: row;
+justify-content: end;
+justify-content: space-between;
+margin-bottom: 10px;
+
+}
+.nav{
+background-color: brown;
+grid-area: nav;
+}
+.main{
+background-color: blueviolet;
+grid-area: main;
+}
+.section{
+background-color: orange;
+}
+.section-1{
+background-color: yellow;
+grid-area: seccion-1;
+}
+.section-2{
+background-color: red;
+grid-area: seccion-2;
+}
+.section-3{
+background-color: palevioletred;
+grid-area: seccion-3;
+}
+.aside{
+    background-color: rgb(157, 231, 45);
+    grid-area: aside;
+}
+.footer{
+    background-color: rgb(139, 139, 139);
+    grid-area: footer;
+}
+.logo_conteiner_header{
+    display: flex;
+    align-items: center;
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    
+}
+.buscador input{
+    width: 300px;
 }
