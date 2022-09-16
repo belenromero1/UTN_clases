@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* mobile first */
+body{
+    background-color: rgb(252, 252, 252);
+}
+.tienda{
+    background-color: rgb(165, 223, 157);
+    text-align: center;
+}
+.tienda img{
+    width: 60%;
+}
+.comunidad{
+    background-color: rgb(151, 112, 187);
+    text-align: center;
+    padding-top: 2rem;
+}
+.comunidad img{
+    width: 80%;
+}
+.texto, .footer{
+    color: aliceblue;
+    padding: 2rem;
+}
+.footer{
+    height: 20%;
+}
+
+/* tabletas - media queries */
+@media(min-width:768px){
+    body{
+        background-color: rgb(206, 119, 199);
+}
+.tienda{
+    background-color: rgb(114, 114, 184);
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+.tienda div{
+    width: 30%;
+}
+.tienda img{
+    width: 90%;
+}
+.comunidad{
+display: flex;
+}
+/* en este caso el agregado no se va a ver en tabletas */
+.agregado{
+    display: none;
+}
+} 
+/* Escritorios */
+@media(min-width:992px){
+    .tienda{
+        flex-wrap: nowrap;
+    }
+    /* en este caso el agregado aparece en escritorios */
+    .agregado{
+        display: block;
+    }
+}
+/* pantallas grandes */
+@media(min-width:1200px){
+    body{
+        background-color:orange;
+    }
+}
