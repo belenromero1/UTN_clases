@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- pseudoclases -->
+            <ul>
+            <ul class="menuSuperior">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="multimedia.html"> Multimedia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+            </ul>
+        </nav>
+
+    </header>
+    <section >
+        <form action="https://formspree.io/f/mlevjblk" method="post" class="formulario">
+        <fieldset class="fieldset">
+            <legend> Formulario de contacto</legend>
+        <label for="nombre">Nombre</label>
+            <!--name (obligatorio) y id identifica el campo para saber a donde se va a enviar  -->
+        <input type="text" name="nombre" id="nombre"
+        placeholder="Ingresa tu nombre">
+
+        <label for="correo">Correo electronico</label>
+        <input type="email" name="correo" id="correo"
+        placeholder="Ingresa tu email">
+<!-- no puedo usar espacios/ñ en la propiedad name -->
+
+        <label for="clave">Contraseña</label>
+        <input type="password" name="clave" id="clave"
+        placeholder="Ingresa tu contraseña">
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha" required > 
+
+        <label for="mensaje"> Escribí tu mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="20" rows="10" minlength="5" maxlength="50"></textarea>
+        
+        <!-- menu desplegable -->
+        <label for="talles">Talles</label>
+        <select name="talles" id="talles">
+            <option value="l">Large</option>
+            <option value="m">Medium</option>
+            <option value="s">Small</option>
+        </select>
+
+        <!-- botones de radio -->
+        <p>País de origen</p>
+        
+        <label for="pais">Argentina</label>
+        <input type="radio" name="pais" value="argentina">
+        <label for="pais">Uruguay</label>
+        <input type="radio" name="pais" value="uruguay">
+        <label for="pais">Chile</label>
+        <input type="radio" name="pais" value="chile">
+
+        <!-- casilla de chequeo -->
+        <div class="checkbox">
+        <label>Acepta los terminos y condiciones</label>
+        <input type="checkbox" name="acepta" value="1">
+        </div>
+        <!-- botones -->
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Limpiar formulario">
+        <input type="button" value="Sin acciones">
+    
+    </fieldset>
+
+        </form>
+
+    </section>
+</body>
+</html>
