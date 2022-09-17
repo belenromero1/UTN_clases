@@ -136,7 +136,6 @@ grid-area: seccion-3;
     flex-direction: column;
     gap: 2rem;
 }
-
 .contenedor_input{
 display: flex;
 flex-direction: column;
