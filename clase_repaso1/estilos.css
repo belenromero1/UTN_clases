@@ -1,15 +1,18 @@
+/* normalize */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     color: black;
-    font-family:'PT Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 body{
     padding: 30px 10px;
-    background: rgb(37,93,195);
-background: radial-gradient(circle, rgba(37,93,195,1) 0%, rgba(71,96,184,1) 23%, rgba(154,154,189,1) 100%);
+    background: rgb(163,127,222);
+background: linear-gradient(90deg, rgba(163,127,222,1) 0%, rgba(214,135,190,0.7315301120448179) 35%);
+
+
 }
 .title_conteiner h1{
     text-align: center;
@@ -21,7 +24,7 @@ display: flex;
 flex-direction: column;
 justify-items: flex-start;
 width: 90%;
-gap: 3hv;
+gap: 3vh;
 }
 .main{
     display: flex;
@@ -36,7 +39,7 @@ gap: 3hv;
     gap: 8vh;
 }
 .error_text{
-    color: #000000;
+    color: rebeccapurple;
     text-align: center;
 }
 .input{
@@ -46,10 +49,12 @@ gap: 3hv;
 }
 .submit{
     padding: 15px;
-    background-color:#3e4dd3;
+    background: rgb(166,137,199);
+    background: linear-gradient(0deg, rgba(166,137,199,1) 0%, rgba(207,152,206,1) 100%);
     border-radius:5px;
-    border: #3e4dd3;
     box-shadow: 3px 3px gray;
+    border: none;
+    font-size: 1.1rem;
     
 }
 .submit:hover{
@@ -59,4 +64,9 @@ gap: 3hv;
 .texto_formulario p a{
     font-weight: bold;
     color: black;
+}
+.conteiner{
+    background-color: white;
+    border-radius: 8px;
+    margin: 2rem;
 }
