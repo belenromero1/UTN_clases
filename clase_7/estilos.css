@@ -3,71 +3,92 @@
     margin: 0;
 }
 
-/* mobile first */
+/* Mobile FIRST */
 body{
-    background-color: rgb(252, 252, 252);
+    background-color: aqua;
 }
+
 .tienda{
-    background-color: rgb(165, 223, 157);
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
     text-align: center;
+    padding: 2rem;
+
 }
 .tienda img{
     width: 60%;
 }
 .comunidad{
-    background-color: rgb(151, 112, 187);
+    background-color: blueviolet;
+    padding-top: 2rem;    
     text-align: center;
-    padding-top: 2rem;
-}
-.comunidad img{
-    width: 80%;
-}
-.texto, .footer{
-    color: aliceblue;
-    padding: 2rem;
-}
-.footer{
-    height: 20%;
+
 }
 
-/* tabletas - media queries */
+.comunidad img{
+    width: 80%;    
+
+}
+
+.texto, .footer{    
+    padding: 2rem;
+    color: aliceblue;
+}
+
+.footer{
+    background-color: black;
+}
+@media(min-width:552px){
+    .agregado{
+        display: none;
+    }
+}
+
+/* TABLETAS */
 @media(min-width:768px){
     body{
-        background-color: rgb(206, 119, 199);
+        background-color: cadetblue;
+    }
+    .tienda{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(225, 186, 135);
+    }
+    .tienda div{
+        width: 30%;
+    }
+    .tienda img{
+        width: 90%;
+    }
+    .comunidad{
+        display: flex;
+    }  
+    .agregado{
+        display: block;
+    }
+
+
 }
-.tienda{
-    background-color: rgb(114, 114, 184);
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
+@media(min-width:768px) and (max-width:1024px){
+    .tienda{
+        text-align: left;
+    }
+
 }
-.tienda div{
-    width: 30%;
-}
-.tienda img{
-    width: 90%;
-}
-.comunidad{
-display: flex;
-}
-/* en este caso el agregado no se va a ver en tabletas */
-.agregado{
-    display: none;
-}
-} 
-/* Escritorios */
+
+/* ESCRITORIOS NORMALES */
+
 @media(min-width:992px){
     .tienda{
         flex-wrap: nowrap;
     }
-    /* en este caso el agregado aparece en escritorios */
-    .agregado{
-        display: block;
-    }
 }
-/* pantallas grandes */
+
+/* PATNTALLAS GRANDES */
 @media(min-width:1200px){
     body{
-        background-color:orange;
+        background-color: chocolate;
     }
+
 }

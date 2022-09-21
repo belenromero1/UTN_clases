@@ -73,6 +73,12 @@ grid-area: nav;
 background-color: blueviolet;
 grid-area: main;
 }
+.tienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+}
 .section{
 background-color: orange;
 }
