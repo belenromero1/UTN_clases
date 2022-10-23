@@ -1,0 +1,17 @@
+.carta{
+    background-color: rgb(101, 111, 216);
+    color: white;
+    width: 15rem;
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.imgCard{
+    width: 100%;
+    border-radius: 20px;
+}
