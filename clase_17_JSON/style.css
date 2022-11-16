@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.carta{
+    background-color: black;
+    color: white;
+    width: 250px;
+    padding: 10px 5px;
+    border-radius: 25px;
+}
